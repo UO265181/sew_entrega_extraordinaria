@@ -1,0 +1,21 @@
+
+body{
+    box-sizing: border-box;
+}
+
+a{
+	display:block;
+}
+
+nav ul{
+    overflow: hidden;
+}
+
+p img{
+	float:left;
+}
+
+nav ul li{
+	float:left;
+}
+
