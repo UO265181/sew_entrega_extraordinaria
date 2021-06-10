@@ -118,9 +118,5 @@ pre {
 /* Especifidad (0,0,1) */
 
 footer {
-    background-color: #304240;
-    color: white;
     padding: 1%;
-    border: solid;
-    border-color: black;
 }
