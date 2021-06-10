@@ -15,6 +15,7 @@ body {
 header {
     padding: 30px;
     background: #2e2e2e;
+    color: #000000;
     text-align: center;
 }
 
@@ -38,6 +39,7 @@ ul {
     list-style-type: none;
     padding: 1%;
     background-color: #2e2e2e;
+    color: white;
 }
 
 
@@ -106,6 +108,7 @@ pre {
     font-family: BaskerVille, serif, sans-serif;
     font-size: 18px;
     color: #000000;
+    background-color: whitesmoke;
     font-style: italic;
     padding-left: 1%;
     border-left: 4px dotted #224743;
