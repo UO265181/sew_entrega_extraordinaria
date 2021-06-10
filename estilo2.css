@@ -33,6 +33,12 @@ li {
 /* Especifidad (0,0,1) */
 
 img {
-    width: 100%;
+    width: 50%;
     height: auto;
+}
+
+video {
+    width: 50%;
+    height: auto;
+    padding-left: 3%;
 }
