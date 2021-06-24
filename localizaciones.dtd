@@ -1,0 +1,32 @@
+<!ELEMENT localizaciones (localizacion+)>
+<!ELEMENT localizacion (introduccion, clima, fotografias)>
+<!ELEMENT introduccion (lugar, historia, datos)>
+<!ELEMENT lugar (#PCDATA)>
+<!ELEMENT historia (#PCDATA)>
+<!ELEMENT datos (#PCDATA)>
+<!ELEMENT clima (carac:elementos, val:valores)>
+<!ELEMENT carac:elementos (carac:temperatura, nubes, carac:precipitacion, carac:viento, agua?)>
+<!ELEMENT carac:temperatura (#PCDATA)>
+<!ELEMENT nubes (#PCDATA)>
+<!ELEMENT carac:precipitacion (#PCDATA)>
+<!ELEMENT carac:viento (#PCDATA)>
+<!ELEMENT agua (#PCDATA)>
+<!ELEMENT val:valores (maximos, minimos)>
+<!ELEMENT maximos (val:temperatura, val:altitud, val:precipitacion, val:viento)>
+<!ELEMENT minimos (val:temperatura, val:altitud?, val:precipitacion, val:viento)>
+<!ELEMENT val:temperatura (#PCDATA)>
+<!ELEMENT val:altitud (#PCDATA)>
+<!ELEMENT val:precipitacion (#PCDATA)>
+<!ELEMENT val:viento (#PCDATA)>
+<!ELEMENT fotografias (foto+)>
+<!ELEMENT foto (#PCDATA)>
+
+<!ATTLIST localizacion nombre CDATA #REQUIRED superficie CDATA #REQUIRED habitantes CDATA #REQUIRED>
+<!ATTLIST clima Koppen CDATA #REQUIRED>
+<!ATTLIST carac:elementos xmlns:carac CDATA #FIXED "http://www.caracteristicas.com">
+<!ATTLIST val:valores xmlns:val CDATA #FIXED "http://www.valores.es">
+<!ATTLIST val:temperatura medida CDATA #REQUIRED>
+<!ATTLIST val:altitud medida (Metros | Kilometros | Millas) #REQUIRED>
+<!ATTLIST val:precipitacion medida CDATA #FIXED "Probabilidad en porcentaje de que un día cualquiera llueva">
+<!ATTLIST val:viento medida CDATA #REQUIRED>
+<!ATTLIST foto formato (jpg | png | raw | jpeg | gif | tiff) #REQUIRED>

@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE localizaciones [
+<!ELEMENT localizaciones (localizacion+)>
+<!ELEMENT localizacion (introduccion, clima, fotografias)>
+<!ELEMENT introduccion (lugar, historia, datos)>
+<!ELEMENT lugar (#PCDATA)>
+<!ELEMENT historia (#PCDATA)>
+<!ELEMENT datos (#PCDATA)>
+<!ELEMENT clima (carac:elementos, val:valores)>
+<!ELEMENT carac:elementos (carac:temperatura, nubes, carac:precipitacion, carac:viento, agua?)>
+<!ELEMENT carac:temperatura (#PCDATA)>
+<!ELEMENT nubes (#PCDATA)>
+<!ELEMENT carac:precipitacion (#PCDATA)>
+<!ELEMENT carac:viento (#PCDATA)>
+<!ELEMENT agua (#PCDATA)>
+<!ELEMENT val:valores (maximos, minimos)>
+<!ELEMENT maximos (val:temperatura, val:altitud, val:precipitacion, val:viento)>
+<!ELEMENT minimos (val:temperatura, val:altitud?, val:precipitacion, val:viento)>
+<!ELEMENT val:temperatura (#PCDATA)>
+<!ELEMENT val:altitud (#PCDATA)>
+<!ELEMENT val:precipitacion (#PCDATA)>
+<!ELEMENT val:viento (#PCDATA)>
+<!ELEMENT fotografias (foto+)>
+<!ELEMENT foto (#PCDATA)>
+
+<!ATTLIST localizacion nombre CDATA #REQUIRED superficie CDATA #REQUIRED habitantes CDATA #REQUIRED>
+<!ATTLIST clima Koppen CDATA #REQUIRED>
+<!ATTLIST carac:elementos xmlns:carac CDATA #FIXED "http://www.caracteristicas.com">
+<!ATTLIST val:valores xmlns:val CDATA #FIXED "http://www.valores.es">
+<!ATTLIST val:temperatura medida CDATA #REQUIRED>
+<!ATTLIST val:altitud medida (Metros | Kilometros | Millas) #REQUIRED>
+<!ATTLIST val:precipitacion medida CDATA #FIXED "Probabilidad en porcentaje de que un día cualquiera llueva">
+<!ATTLIST val:viento medida CDATA #REQUIRED>
+<!ATTLIST foto formato (jpg | png | raw | jpeg | gif | tiff) #REQUIRED>
+]>
+
+<localizaciones>
+    <localizacion nombre="Llanes" superficie="263,59 km²" habitantes="13759">
+        <introduccion>
+            <lugar>
+            Situada al borde del mar Cantábrico, cerca de los Picos de Europa.
+            </lugar>
+            <historia>
+            En el siglo XIII, la llamada Puebla de Aguilar obtiene fuero otorgado por Alfonso IX de León convirtiéndose en la villa de Llanes.
+            </historia>
+            <datos>
+            En Llanes se formaron unos profesionales de la teja de ladrillo que llegaron a ser muy populares y cuyo trabajo era apreciado y requerido no solo en Asturias sino también en León.
+            </datos>
+        </introduccion>
+        <clima Koppen="Cfb">
+            <carac:elementos xmlns:carac="http://www.caracteristicas.com">
+                <carac:temperatura>
+                Durante el transcurso del año, la temperatura generalmente varía de 7 °C a 23 °C y rara vez baja a menos de 3 °C o sube a más de 26 °C.
+                </carac:temperatura>
+                <nubes>
+                La parte más despejada del año comienza aproximadamente el 12 de junio; dura 3,2 meses y se termina aproximadamente el 18 de septiembre.
+                </nubes>
+                <carac:precipitacion>
+                La mayoría de la lluvia cae durante los 31 días centrados alrededor del 21 de noviembre. La fecha aproximada con la menor cantidad de lluvia es el 20 de julio.
+                </carac:precipitacion>
+                <carac:viento>
+                La parte más ventosa del año dura 6,4 meses, del 13 de octubre al 24 de abril, con velocidades promedio del viento de más de 15,7 kilómetros por hora.
+                </carac:viento>
+                <agua>
+                La época del año cuando el agua está más caliente dura 2,6 meses, del 9 de julio al 26 de septiembre, con una temperatura promedio superior a 19 °C.
+                </agua>
+            </carac:elementos>
+            <val:valores xmlns:val="http://www.valores.es">
+                <maximos>
+                    <val:temperatura medida="Grados celcius">
+                23
+                    </val:temperatura>
+                    <val:altitud medida="Metros">
+                1177
+                    </val:altitud>
+                    <val:precipitacion medida="Probabilidad en porcentaje de que un día cualquiera llueva">
+                39
+                    </val:precipitacion>
+                    <val:viento medida="Kilometros por hora">
+                35
+                    </val:viento>
+                </maximos>
+                <minimos>
+                    <val:temperatura medida="Grados celcius">
+                7
+                    </val:temperatura>
+                    <val:altitud medida="Metros">
+                0
+                    </val:altitud>
+                    <val:precipitacion medida="Probabilidad en porcentaje de que un día cualquiera llueva">
+                10
+                    </val:precipitacion>
+                    <val:viento medida="Kilometros por hora">
+                5
+                    </val:viento>
+                </minimos>
+            </val:valores>
+        </clima>
+        <fotografias>
+            <foto formato="jpg">
+            https://w6r8k4w6.rocketcdn.me/wp-content/uploads/2018/10/llanes-paseo-de-san-pedro-1.jpg
+            </foto>
+            <foto formato="jpg">
+            https://static.elcomercio.es/www/multimedia/202001/09/media/cortadas/llanes1-kbMC-U901173769811cFG-624x385@El%20Comercio.jpg
+            </foto>
+            <foto formato="jpg">
+            https://www.escapadarural.com/blog/wp-content/uploads/2020/10/aerial-view-of-llanes-fishing-town-in-asturias-spain-stockpack-adobe-stock-1024x575.jpg
+            </foto>
+        </fotografias>
+    </localizacion>
+    <localizacion nombre="Pravia" superficie="102,96 km²" habitantes="8384">
+        <introduccion>
+            <lugar>
+            Limita al norte con Cudillero y Muros del Nalón, al este con Candamo y Soto del Barco, al oeste con Cudillero y Salas y al sur con Candamo y Salas de nuevo.
+            </lugar>
+            <historia>
+             En 1836 pierde la mitad de su extensión aproximadamente, al segregarse los terrenos pertenecientes a Muros de Nalón, Soto del Barco y Cudillero que pasaron a formar ayuntamientos propios.
+            </historia>
+            <datos>
+             Ha logrado que la Federación Española del Kiwi abra su nueva sede en Pravia.
+            </datos>
+        </introduccion>
+        <clima Koppen="Cfb">
+            <carac:elementos xmlns:carac="http://www.caracteristicas.com">
+                <carac:temperatura>
+                La temporada templada dura 2,9 meses, del 27 de junio al 25 de septiembre, y la temperatura máxima promedio diaria es más de 21 °C.
+                </carac:temperatura>
+                <nubes>
+                La parte más despejada del año en Pravia comienza aproximadamente el 14 de junio; dura 3,0 meses y se termina aproximadamente el 14 de septiembre.
+                </nubes>
+                <carac:precipitacion>
+                La temporada más mojada dura 8,1 meses, de 26 de septiembre a 29 de mayo.
+                </carac:precipitacion>
+                <carac:viento>
+                La parte más ventosa del año dura 6,4 meses, del 13 de octubre al 24 de abril, con velocidades promedio del viento de más de 15,7 kilómetros por hora.
+                </carac:viento>
+                <agua>
+                La época del año cuando el agua está más caliente dura 2,5 meses, del 10 de julio al 26 de septiembre, con una temperatura promedio superior a 19 °C.
+                </agua>
+            </carac:elementos>
+            <val:valores xmlns:val="http://www.valores.es">
+                <maximos>
+                    <val:temperatura medida="Grados celcius">
+                    23
+                    </val:temperatura>
+                    <val:altitud medida="Metros">
+                    678
+                    </val:altitud>
+                    <val:precipitacion medida="Probabilidad en porcentaje de que un día cualquiera llueva">
+                    39
+                    </val:precipitacion>
+                    <val:viento medida="Kilometros por hora">
+                    26
+                    </val:viento>
+                </maximos>
+                <minimos>
+                    <val:temperatura medida="Grados celcius">
+                    2
+                    </val:temperatura>
+                    <val:altitud medida="Metros">
+                    0
+                    </val:altitud>
+                    <val:precipitacion medida="Probabilidad en porcentaje de que un día cualquiera llueva">
+                    12
+                    </val:precipitacion>
+                    <val:viento medida="Kilometros por hora">
+                    5
+                    </val:viento>
+                </minimos>
+                </val:valores>
+            </clima>
+            <fotografias>
+                <foto formato="jpg">
+            https://www.turismoasturias.es/documents/11022/34304/Pravia.jpg
+                </foto>
+                <foto formato="jpg">
+            https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/PA120228_Pravia.jpg/266px-PA120228_Pravia.jpg
+                </foto>
+                <foto formato="jpg">
+            https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Conjunto_Hist%C3%B3rico_de_la_Villa_de_Pravia._08.jpg/220px-Conjunto_Hist%C3%B3rico_de_la_Villa_de_Pravia._08.jpg
+                </foto>
+            </fotografias>
+        </localizacion>
+        <localizacion nombre="Ribadesella" superficie="84,37 km²" habitantes="5688">
+            <introduccion>
+                <lugar>
+            Limita al norte con el mar Cantábrico, al este con Llanes, al sur con Cangas de Onís y Parres y al oeste con Caravia.
+                </lugar>
+                <historia>
+            Fundada por Alfonso X el Sabio. Fue uno de los principales puertos asturianos del siglo XIX.
+                </historia>
+                <datos>
+            El primer sábado de agosto después del día 2 se celebra el famoso Descenso Internacional del Sella, donde acuden deportistas de todo el mundo y se celebra una gran fiesta declarada de Interés Turístico Internacional.
+                </datos>
+            </introduccion>
+            <clima Koppen="Cfb">
+            
+                <carac:elementos xmlns:carac="http://www.caracteristicas.com">
+                    <carac:temperatura>
+                La temporada templada dura 2,9 meses, del 27 de junio al 24 de septiembre, y la temperatura máxima promedio diaria es más de 21 °C.
+                    </carac:temperatura>
+                    <nubes>
+                La parte más despejada del año en Ribadesella comienza aproximadamente el 13 de junio; dura 3,1 meses y se termina aproximadamente el 16 de septiembre.
+                    </nubes>
+                    <carac:precipitacion>
+                La temporada más mojada dura 7,8 meses, de 27 de septiembre a 22 de mayo, con una probabilidad de más del 25 % de que cierto día será un día mojado.
+                    </carac:precipitacion>
+                    <carac:viento>
+                La parte más ventosa del año dura 6,3 meses, del 14 de octubre al 23 de abril, con velocidades promedio del viento de más de 15,7 kilómetros por hora.
+                    </carac:viento>
+                    <agua>
+                La época del año cuando el agua está más caliente dura 2,5 meses, del 9 de julio al 26 de septiembre, con una temperatura promedio superior a 19 °C.
+                    </agua>
+                </carac:elementos>
+                
+            <val:valores xmlns:val="http://www.valores.es">
+                <maximos>
+                    <val:temperatura medida="Grados celcius">
+                23
+                    </val:temperatura>
+                    <val:altitud medida="Metros">
+                897
+                    </val:altitud>
+                    <val:precipitacion medida="Probabilidad en porcentaje de que un día cualquiera llueva">
+                39
+                    </val:precipitacion>
+                    <val:viento medida="Kilometros por hora">
+                34
+                    </val:viento>
+                </maximos>
+                <minimos>
+                    <val:temperatura medida="Grados celcius">
+                7
+                    </val:temperatura>
+                    <val:altitud medida="Metros">
+                0
+                    </val:altitud>
+                    <val:precipitacion medida="Probabilidad en porcentaje de que un día cualquiera llueva">
+                11
+                    </val:precipitacion>
+                    <val:viento medida="Kilometros por hora">
+                4
+                    </val:viento>
+                </minimos>
+                </val:valores>
+            </clima>
+            <fotografias>
+                <foto formato="jpg">
+            https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Ribadesella_%28Asturias%29_05.jpg/266px-Ribadesella_%28Asturias%29_05.jpg
+                </foto>
+                <foto formato="jpg">
+            https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Tito_Bustillo_entrada.JPG/266px-Tito_Bustillo_entrada.JPG
+                </foto>
+                <foto formato="jpg">
+            https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Ribadesella_-_Desembocadura_del_Sella.jpg/266px-Ribadesella_-_Desembocadura_del_Sella.jpg
+                </foto>
+            </fotografias>
+        </localizacion>
+        <localizacion nombre="Langreo" superficie="82,46 km²" habitantes="39183">
+            <introduccion>
+                <lugar>
+            El concejo limita al norte con Siero y con Noreña, al oeste con Oviedo, al sur con Mieres y al este con San Martín del Rey Aurelio.
+                </lugar>
+                <historia>
+            La ciudad se instituyó como el conjunto urbano formado por las entonces villas y ahora distritos urbanos de Sama, Ciaño, La Felguera, Lada, Barros y Riaño, y asumió la capitalidad del concejo, en lugar de Sama.
+                </historia>
+                <datos>
+            Fue uno de los núcleos industriales más importantes del país.
+                </datos>
+            </introduccion>
+            <clima Koppen="Cfb">
+                <carac:elementos xmlns:carac="http://www.caracteristicas.com">
+                    <carac:temperatura>
+                La temporada templada dura 2,9 meses, del 24 de junio al 20 de septiembre, y la temperatura máxima promedio diaria es más de 21 °C.
+                    </carac:temperatura>
+                    <nubes>
+                La parte más despejada del año en Langreo comienza aproximadamente el 12 de junio; dura 3,2 meses y se termina aproximadamente el 17 de septiembre.
+                    </nubes>
+                    <carac:precipitacion>
+                La temporada más mojada dura 8,1 meses, de 25 de septiembre a 27 de mayo, con una probabilidad de más del 24 % de que cierto día será un día mojado.
+                    </carac:precipitacion>
+                    <carac:viento>
+                La parte más ventosa del año dura 6,5 meses, del 11 de octubre al 27 de abril, con velocidades promedio del viento de más de 13,3 kilómetros por hora.
+                    </carac:viento>
+                </carac:elementos>
+            <val:valores xmlns:val="http://www.valores.es">
+                <maximos>
+                    <val:temperatura medida="Grados celcius">
+                23
+                    </val:temperatura>
+                    <val:altitud medida="Metros">
+                1023
+                    </val:altitud>
+                    <val:precipitacion medida="Probabilidad en porcentaje de que un día cualquiera llueva">
+                38
+                    </val:precipitacion>
+                    <val:viento medida="Kilometros por hora">
+                29
+                    </val:viento>
+                </maximos>
+                <minimos>
+                    <val:temperatura medida="Grados celcius">
+                4
+                    </val:temperatura>
+                    <val:altitud medida="Metros">
+                ?
+                    </val:altitud>
+                    <val:precipitacion medida="Probabilidad en porcentaje de que un día cualquiera llueva">
+                1
+                    </val:precipitacion>
+                    <val:viento medida="Kilometros por hora">
+                3
+                    </val:viento>
+                </minimos>
+                </val:valores>
+            </clima>
+            <fotografias>
+                <foto formato="jpg">
+            https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Llangreu_valle_%28cropped%29.jpg/266px-Llangreu_valle_%28cropped%29.jpg
+                </foto>
+                <foto formato="jpg">
+            https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Casa%27l_conceyu_llangreu.jpg/132px-Casa%27l_conceyu_llangreu.jpg
+                </foto>
+                <foto formato="jpg">
+            https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Sama_%28Langreo%29_-_Iglesia_de_Santiago_Ap%C3%B3stol_03_%28cropped%29.jpg/132px-Sama_%28Langreo%29_-_Iglesia_de_Santiago_Ap%C3%B3stol_03_%28cropped%29.jpg
+                </foto>
+            </fotografias>
+        </localizacion>
+        <localizacion nombre="Mieres" superficie="146,03 km²" habitantes="37537">
+            <introduccion>
+                <lugar>
+            Limita al norte con Ribera de Arriba, Oviedo y Langreo, al sur con Lena y Aller, al este con Langreo, San Martín del Rey Aurelio y Laviana y al oeste con Morcín y Riosa.
+                </lugar>
+                <historia>
+            Es a partir de mediados del siglo IX cuando comienza a aparecer el nombre de Mieres con relativa frecuencia en los documentos de la época. En este siglo ya se tiene constancia de la existencia de algunos pequeños núcleos de población en el territorio del concejo, en el entorno de diversas posadas e iglesias.
+                </historia>
+                <datos>
+            Fue un importante centro de explotación de minas de carbón desde el siglo XIX, actividad actualmente finalizada.
+                </datos>
+            </introduccion>
+            <clima Koppen="Cfb">
+                <carac:elementos xmlns:carac="http://www.caracteristicas.com">
+                    <carac:temperatura>
+                La temporada templada dura 2,8 meses, del 24 de junio al 19 de septiembre, y la temperatura máxima promedio diaria es más de 21 °C.
+                    </carac:temperatura>
+                    <nubes>
+                La parte más despejada del año en Mieres comienza aproximadamente el 12 de junio; dura 3,2 meses y se termina aproximadamente el 17 de septiembre.
+                    </nubes>
+                    <carac:precipitacion>
+                La temporada más mojada dura 8,0 meses, de 27 de septiembre a 27 de mayo, con una probabilidad de más del 24 % de que cierto día será un día mojado.
+                    </carac:precipitacion>
+                    <carac:viento>
+                La parte más ventosa del año dura 6,6 meses, del 9 de octubre al 29 de abril, con velocidades promedio del viento de más de 12,7 kilómetros por hora.
+                    </carac:viento>
+                </carac:elementos>
+                            <val:valores xmlns:val="http://www.valores.es">
+                <maximos>
+                    <val:temperatura medida="Grados celcius">
+                25
+                    </val:temperatura>
+                    <val:altitud medida="Metros">
+                1153
+                    </val:altitud>
+                    <val:precipitacion medida="Probabilidad en porcentaje de que un día cualquiera llueva">
+                38
+                    </val:precipitacion>
+                    <val:viento medida="Kilometros por hora">
+                27
+                    </val:viento>
+                </maximos>
+                <minimos >
+                    <val:temperatura medida="Grados celcius">
+                3
+                    </val:temperatura>
+                    <val:altitud medida="Metros">
+                ?
+                    </val:altitud>
+                    <val:precipitacion medida="Probabilidad en porcentaje de que un día cualquiera llueva">
+                10
+                    </val:precipitacion>
+                    <val:viento medida="Kilometros por hora">
+                4
+                    </val:viento>
+                </minimos>
+                </val:valores>
+            </clima>
+            <fotografias>
+                <foto formato="jpg">
+            https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Plaza_de_Requejo_%28Mieres%29.jpg/266px-Plaza_de_Requejo_%28Mieres%29.jpg
+                </foto>
+                <foto formato="jpg">
+            https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Casa%27l_conceyu_mieres.jpg/132px-Casa%27l_conceyu_mieres.jpg
+                </foto>
+                <foto formato="jpg">
+            https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Rio_Caudal._Mieres._Asturies.jpg/132px-Rio_Caudal._Mieres._Asturies.jpg
+                </foto>
+            </fotografias>
+        </localizacion>
+    </localizaciones>
